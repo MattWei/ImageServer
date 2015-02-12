@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" name="viewport"
+	content="width=device-width, initial-scale=1">
+<title>Hello World!</title>
+
+<link rel="stylesheet"
+	href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css">
+<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+<script
+	src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+<script type="application/javascript" src="ImageServer.js"></script>
+
+<script>
+//var type="photo";
+
+$(document).bind('pageinit', pageInit());
+
+</script>
+</head>
+<body>
+
+
+	<div data-role="main" class="ui-content">
+		<p id="updating">Updating</p>
+		
+		<table data-role="table" data-mode="columntoggle"
+			class="ui-responsive ui-shadow" id="PhotoTable">
+			<tbody id="table-show">
+
+			</tbody>
+		</table>
+
+		<p id="loading">Loading</p>
+
+		<div id="popupDiv"></div>
+
+	</div>
+
+</body>
+</html>
